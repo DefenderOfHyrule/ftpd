@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(ftpd VERSION 3.2.1)
+project(ftpd VERSION 3.2.2)
 
 if(CMAKE_EXPORT_COMPILE_COMMANDS)
 	list(APPEND CMAKE_C_STANDARD_INCLUDE_DIRECTORIES ${CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES})
@@ -145,7 +145,7 @@ if(NINTENDO_SWITCH)
 	if(FTPD_CLASSIC)
 		nx_generate_nacp(${FTPD_TARGET}.nacp
 			NAME "${PROJECT_NAME} classic"
-			AUTHOR "(c) 2024 Michael Theall, Dave Murphy, TuxSH"
+			AUTHOR "(c) 2025 Michael Theall, Dave Murphy, TuxSH"
 			VERSION ${PROJECT_VERSION}
 		)
 
@@ -240,7 +240,7 @@ if(NINTENDO_SWITCH)
 
 	nx_generate_nacp(${FTPD_TARGET}.nacp
 		NAME "${PROJECT_NAME} pro"
-		AUTHOR "(c) 2024 Michael Theall, Dave Murphy, TuxSH"
+		AUTHOR "(c) 2025 Michael Theall, Dave Murphy, TuxSH"
 		VERSION ${PROJECT_VERSION}
 	)
 
@@ -258,7 +258,7 @@ elseif(NINTENDO_3DS)
 		ctr_generate_smdh(${FTPD_TARGET}.smdh
 			NAME "${PROJECT_NAME} classic"
 			DESCRIPTION "v${PROJECT_VERSION}"
-			AUTHOR "(c) 2024 Michael Theall, Dave Murphy, TuxSH"
+			AUTHOR "(c) 2025 Michael Theall, Dave Murphy, TuxSH"
 			ICON meta/icon.png
 		)
 
@@ -328,7 +328,7 @@ elseif(NINTENDO_3DS)
 	ctr_generate_smdh(${FTPD_TARGET}.smdh
 		NAME "${PROJECT_NAME} pro"
 		DESCRIPTION "v${PROJECT_VERSION}"
-		AUTHOR "(c) 2024 Michael Theall, Dave Murphy, TuxSH"
+		AUTHOR "(c) 2025 Michael Theall, Dave Murphy, TuxSH"
 		ICON meta/icon.png
 	)
 
@@ -349,7 +349,7 @@ elseif(NINTENDO_DS)
 	nds_create_rom(${FTPD_TARGET}
 		NAME "${PROJECT_NAME} classic"
 		SUBTITLE1 "v${PROJECT_VERSION}"
-		SUBTITLE2 "(c) 2024 mtheall"
+		SUBTITLE2 "(c) 2025 mtheall"
 		ICON nds/icon.bmp
 	)
 else()

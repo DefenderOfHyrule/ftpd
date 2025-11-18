@@ -113,7 +113,21 @@ The first three are available as part of the `switch-dev` meta-package. Addition
 
 Build `switch/ftpd.nro`:
 
-    make nro
+1. Install the dependencies and clone the repository with:
+`git clone --recurse-submodules https://github.com/mtheall/ftpd.git`
+
+2. Create the build dir and cd into the build dir with:
+`mkdir build && cd build`
+
+3. Run the following cmake build command:
+`cmake -DCMAKE_TOOLCHAIN_FILE=/opt/devkitpro/cmake/Switch.cmake -DNINTENDO_SWITCH=ON ..`
+
+4. Run make:
+`make -j$(nproc)`
+
+5. Your ftpd.nro homebrew app will be located in:
+`/ftpd/build/`
+
 
 ## Supported Commands
 
